@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="index.js" defer></script>
+	<link rel="stylesheet" href="styles.css">
+	<title>Document</title>
+</head>
+<body>
+
+	<div class='form'>
+		<div>
+			<h1>Sign Up</h1>
+			<hr>
+		</div>
+	
+		<form novalidate autocomplete='off'>
+			<div class='email'>
+				<input placeholder='Email address' required>
+				<p>Required field</p>
+			</div>
+			
+			<div class='password'>
+				<input type='password' placeholder='Password' required>
+				<span class='togglePassword'></span>
+				<ul class='requirements'>
+					<li class='length'>At least 8 characters</li>
+					<li class='lowercase'>At least one lowercase character</li>
+					<li class='uppercase'>At least one uppercase character</li>
+					<li class='number'>At least one number</li>
+					<li class='specChar'>At least one special character</li>
+				</ul>
+				<p>Required field</p>
+			</div>
+			
+			<div class='confirmation'>
+				<input type='password' placeholder='Cofirmation' required>
+				<span class='toggleConfirmation'></span>
+				<p>Required field</p>
+			</div>
+			
+			<button class='submitBtn'>Submit</button>
+		</form>
+	</div>
+</body>
+</html>
